@@ -1,5 +1,5 @@
 
-# rboschin/laravel-mail-log
+# Laravel-mail-log
 
 Small Laravel package that sends log records via email.
 
@@ -11,7 +11,7 @@ In your app `composer.json` add a repository entry:
 "repositories": [
   {
       "type": "vcs",
-      "url":  "https://gitlab.com/rboschin/laravel-mail-log.git"
+      "url":  "https://github.com/rboschin/laravel-mail-log.git"
   }
 ]
 ```
