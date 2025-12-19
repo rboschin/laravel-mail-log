@@ -1,0 +1,18 @@
+{
+  "name": "rboschin/laravel-mail-log",
+  "description": "Laravel package to email log records",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Rboschin\\LaravelMailLog\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rboschin\\LaravelMailLog\\Providers\\MailLogServiceProvider"
+      ]
+    }
+  }
+}
