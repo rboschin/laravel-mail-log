@@ -27,6 +27,7 @@ composer require rboschin/laravel-mail-log:dev-main
   - php artisan vendor:publish --provider="Rboschin\\LaravelMailLog\\Providers\\MailLogServiceProvider" --tag=mail-log-config
   - php artisan vendor:publish --provider="Rboschin\\LaravelMailLog\\Providers\\MailLogServiceProvider" --tag=mail-log-views
 - Configure `.env` (see `config/mail-log.php` keys or `.env.example`)
+- Update configuration `php artisan config:clear`
 - Start queue worker if `MAIL_LOG_QUEUE=true` (`php artisan queue:work`)
 
 ## Test
