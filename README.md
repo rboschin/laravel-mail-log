@@ -3,7 +3,7 @@
 
 Small Laravel package that sends log records via email.
 
-## Quick install (local path)
+## Quick install
 
 In your app `composer.json` add a repository entry:
 
@@ -11,7 +11,7 @@ In your app `composer.json` add a repository entry:
 "repositories": [
   {
       "type": "vcs",
-      "url":  "https://gitlab.com/laraproj/laravel-mail-log.git"
+      "url":  "https://gitlab.com/rboschin/laravel-mail-log.git"
   }
 ]
 ```
@@ -26,8 +26,7 @@ composer require rboschin/laravel-mail-log:dev-main
 - Publish config and views (optional):
   - php artisan vendor:publish --provider="Rboschin\\LaravelMailLog\\Providers\\MailLogServiceProvider" --tag=mail-log-config
   - php artisan vendor:publish --provider="Rboschin\\LaravelMailLog\\Providers\\MailLogServiceProvider" --tag=mail-log-views
-- Configure `.env` (see `config/mail-log.php` keys or .env.example)
-  - Note: `MAIL_LOG_IS_VERBOSE` (replaces the old `MAIL_LOG_ATTACH_JSON`) when set to `true` will include the JSON payload inline in the email body instead of attaching it as a file.
+- Configure `.env` (see `config/mail-log.php` keys or `.env.example`)
 - Start queue worker if `MAIL_LOG_QUEUE=true` (`php artisan queue:work`)
 
 ## Test
